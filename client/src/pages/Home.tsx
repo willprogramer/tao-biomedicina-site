@@ -49,8 +49,8 @@ export default function Home() {
           <div className="absolute inset-0 bg-white/40"></div>
         </div>
         <div className="relative z-10 container text-center max-w-2xl mx-auto px-4">
-          <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Caminho da Saúde
+          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+            TAO CENTRO DE BIOMEDICINA INTEGRATIVA & BEM ESTAR
           </h1>
           <p className="text-xl text-muted-foreground mb-8 font-light">
             Biomedicina integrativa para seu bem-estar completo
