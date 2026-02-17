@@ -281,7 +281,7 @@ export default function Home() {
       <footer className="bg-foreground text-white py-8">
         <div className="container text-center text-sm text-white/70">
           <p>&copy; 2024 Tao Centro de Biomedicina. Todos os direitos reservados.</p>
-          <p className="mt-2">Caminho da Saúde - Biomedicina Integrativa</p>
+          <p className="mt-2">Tao Centro de Biomedicina Integrativa e bem estar</p>
         </div>
       </footer>
     </div>
