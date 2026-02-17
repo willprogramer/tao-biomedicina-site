@@ -32,9 +32,11 @@ export default function Home() {
               Contato
             </a>
           </nav>
-          <Button variant="default" size="sm" className="bg-accent hover:bg-accent/90">
-            Agendar
-          </Button>
+          <a href="https://wa.me/5511999803503?text=Olá%20Tao%20Centro%20de%20Biomedicina!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener noreferrer">
+            <Button variant="default" size="sm" className="bg-accent hover:bg-accent/90">
+              Agendar
+            </Button>
+          </a>
         </div>
       </header>
 
@@ -56,9 +58,11 @@ export default function Home() {
           <p className="text-xl text-muted-foreground mb-8 font-light">
             Biomedicina integrativa para seu bem-estar completo
           </p>
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-            Conhecer Serviços
-          </Button>
+          <a href="#servicos">
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+              Conhecer Serviços
+            </Button>
+          </a>
         </div>
       </section>
 
@@ -231,8 +235,8 @@ export default function Home() {
               </div>
               <h3 className="font-bold text-foreground mb-2">Contato</h3>
               <p className="text-sm text-muted-foreground">
-                <a href="tel:" className="hover:text-accent transition-colors">
-                  Entre em contato
+                <a href="https://wa.me/5511999803503?text=Olá%20Tao%20Centro%20de%20Biomedicina!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  WhatsApp
                 </a>
                 <br />
                 <a href="https://www.instagram.com/taocentrodebiomedicina/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
@@ -243,9 +247,11 @@ export default function Home() {
           </div>
 
           <div className="mt-12 text-center">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
-              Agendar Consulta
-            </Button>
+            <a href="https://wa.me/5511999803503?text=Olá%20Tao%20Centro%20de%20Biomedicina!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+                Agendar Consulta
+              </Button>
+            </a>
           </div>
         </div>
       </section>
