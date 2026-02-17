@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MapPin, Clock, Droplets, Leaf, Wind } from "lucide-react";
+import { Phone, MapPin, Clock, Droplets, Leaf, Wind, MessageCircle, Instagram } from "lucide-react";
 
 /**
  * Design Philosophy: Minimalismo Zen com Toques Orgânicos
@@ -233,16 +233,19 @@ export default function Home() {
               <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
                 <Phone className="w-6 h-6 text-accent" />
               </div>
-              <h3 className="font-bold text-foreground mb-2">Contato</h3>
-              <p className="text-sm text-muted-foreground">
-                <a href="https://wa.me/5511999803503?text=Olá%20Tao%20Centro%20de%20Biomedicina!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                  WhatsApp
+              <h3 className="font-bold text-foreground mb-4">Contato</h3>
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Phone className="w-4 h-4 text-accent" />
+                <p className="text-sm text-muted-foreground font-medium">(11) 3864-9570</p>
+              </div>
+              <div className="flex items-center justify-center gap-4">
+                <a href="https://wa.me/5511999803503" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  <MessageCircle className="w-6 h-6" />
                 </a>
-                <br />
                 <a href="https://www.instagram.com/taocentrodebiomedicina/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                  @taocentrodebiomedicina
+                  <Instagram className="w-6 h-6" />
                 </a>
-              </p>
+              </div>
             </div>
           </div>
 
