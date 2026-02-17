@@ -50,7 +50,8 @@ export default function Home() {
         </div>
         <div className="relative z-10 container text-center max-w-2xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-            TAO CENTRO DE BIOMEDICINA INTEGRATIVA & BEM ESTAR
+            TAO CENTRO DE BIOMEDICINA<br />
+            INTEGRATIVA & BEM ESTAR
           </h1>
           <p className="text-xl text-muted-foreground mb-8 font-light">
             Biomedicina integrativa para seu bem-estar completo
