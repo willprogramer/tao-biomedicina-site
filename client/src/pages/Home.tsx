@@ -256,6 +256,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Map Section */}
+      <section className="py-16 bg-white">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-4">Nos Encontre</h2>
+            <p className="text-muted-foreground">Visite nossa clínica em Perdizes, São Paulo</p>
+          </div>
+          <div className="rounded-lg overflow-hidden shadow-lg h-96">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.123456!2d-46.6789!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9c9c9c9c9c9%3A0x9c9c9c9c9c9c9c9c!2sRua%20Turiassu%2C%20662%20-%20Perdizes%2C%20S%C3%A3o%20Paulo%2C%20SP%2005005-000!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-foreground text-white py-8">
         <div className="container text-center text-sm text-white/70">
