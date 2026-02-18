@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MapPin, Clock, Droplets, Leaf, Wind, MessageCircle, Instagram } from "lucide-react";
+import { Phone, MapPin, Clock, Droplets, Leaf, Wind, Send, AtSign } from "lucide-react";
 
 /**
  * Design Philosophy: Minimalismo Zen com Toques Orgânicos
@@ -238,12 +238,14 @@ export default function Home() {
                 <Phone className="w-4 h-4 text-accent" />
                 <p className="text-sm text-muted-foreground font-medium">(11) 3864-9570</p>
               </div>
-              <div className="flex items-center justify-center gap-4">
-                <a href="https://wa.me/5511999803503" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                  <MessageCircle className="w-6 h-6" />
+              <div className="flex flex-col gap-3">
+                <a href="https://wa.me/5511999803503" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 hover:text-accent transition-colors">
+                  <Send className="w-4 h-4 text-accent" />
+                  <p className="text-sm text-muted-foreground font-medium">WhatsApp</p>
                 </a>
-                <a href="https://www.instagram.com/taocentrodebiomedicina/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                  <Instagram className="w-6 h-6" />
+                <a href="https://www.instagram.com/taocentrodebiomedicina/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 hover:text-accent transition-colors">
+                  <AtSign className="w-4 h-4 text-accent" />
+                  <p className="text-sm text-muted-foreground font-medium">Instagram</p>
                 </a>
               </div>
             </div>
