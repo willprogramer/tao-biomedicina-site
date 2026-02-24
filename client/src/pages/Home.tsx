@@ -30,6 +30,12 @@ export default function Home() {
             <a href="#sobre" className="text-sm font-medium hover:text-accent transition-colors">
               Sobre
             </a>
+            <a href="#remocao" className="text-sm font-medium hover:text-accent transition-colors">
+              Serviço de Remoção
+            </a>
+            <a href="#depoimentos" className="text-sm font-medium hover:text-accent transition-colors">
+              Depoimentos
+            </a>
             <a href="#contato" className="text-sm font-medium hover:text-accent transition-colors">
               Contato
             </a>
@@ -260,7 +266,7 @@ export default function Home() {
       </section>
 
       {/* Retirada e Entrega Section */}
-      <section className="py-24 bg-white">
+      <section id="remocao" className="py-24 bg-white">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-6">Serviço de Remoção em Ambulância</h2>
@@ -313,7 +319,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-24 bg-muted/30">
+      <section id="depoimentos" className="py-24 bg-muted/30">
         <div className="container">
           <div className="text-center mb-12">
             <p className="text-sm font-semibold text-accent mb-2">DEPOIMENTOS</p>
