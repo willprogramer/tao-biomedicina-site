@@ -16,10 +16,12 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
         <div className="container py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
-              <Leaf className="w-6 h-6 text-accent-foreground" />
-            </div>
-            <h1 className="text-2xl font-bold text-foreground">Tao</h1>
+            <img
+                  src="/image/logo.jpeg"
+                  alt="logo"
+                  className="w-55 h-30 rounded-lg object-cover"
+                />
+            <h1 className="text-2xl font-bold text-foreground"></h1>
           </div>
           <nav className="hidden md:flex gap-8">
             <a href="#servicos" className="text-sm font-medium hover:text-accent transition-colors">
@@ -79,7 +81,7 @@ export default function Home() {
             <div className="flex gap-8">
               <div className="flex-shrink-0">
                 <img
-                  src="https://private-us-east-1.manuscdn.com/sessionFile/r4eqXbJ306wy5f16Shcgho/sandbox/vbHChzgJEgmuF1Ow5rRoJv-img-2_1771341276000_na1fn_YWN1cHVudHVyYS16ZW4.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcjRlcVhiSjMwNnd5NWYxNlNoY2doby9zYW5kYm94L3ZiSENoemdKRWdtdUYxT3c1clJvSnYtaW1nLTJfMTc3MTM0MTI3NjAwMF9uYTFmbl9ZV04xY0hWdWRIVnlZUzE2Wlc0LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=HKGqLRfU6CuCC-MX8yqeSGBLBf2b4cGaxfMWO7vW33BMzs5qoZsHJulI5~JgfhFpOg~z38RZ5Vd1jjoWbwaut2g64ovqAkE2dY6~cBb7i4b2IOPeY9IokzGFHNXjYQ7T1F6inf1VPsjMjHyiD18D2~e1s~-eiHCSjZqtO5toP4Da4kGs5C4qgfzJj6ulIzLGlMU-P1P-jgvMDxej2wupXi6tqPCZu12-5i2SW9TpwesTa4TTejoIhdy148rZouiDCplMPqJ766i46hGRdiAd7skaEjCs~5m5OnAC8OwVnpjKs7OkJNyLZx52NhOEsd6yWGvOlIGmXXemg16SA2n3Ww__"
+                  src="/image/acupuntura.jpeg"
                   alt="Acupuntura"
                   className="w-32 h-32 rounded-lg object-cover"
                 />
@@ -89,9 +91,6 @@ export default function Home() {
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Terapia tradicional chinesa que equilibra a energia do corpo, aliviando dores e promovendo bem-estar integral.
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  Responsável técnico: Dr. Carlos Lupo (CRBM: 22793)
-                </p>
               </div>
             </div>
 
@@ -99,7 +98,7 @@ export default function Home() {
             <div className="flex gap-8">
               <div className="flex-shrink-0">
                 <img
-                  src="https://private-us-east-1.manuscdn.com/sessionFile/r4eqXbJ306wy5f16Shcgho/sandbox/9hS4dUXrs094IuUayRRPWL-img-1_1771341886000_na1fn_aGlkcm90ZXJhcGlhLXBpc2NpbmE.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcjRlcVhiSjMwNnd5NWYxNlNoY2doby9zYW5kYm94LzloUzRkVVhyczA5NEl1VWF5UlJQV0wtaW1nLTFfMTc3MTM0MTg4NjAwMF9uYTFmbl9hR2xrY201MFpYSmhjR2xoTFhCcGMyTnBibUUucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=n8CxuXlQKdT88TL3ImFViIQd3YMTuNaOWzGgqEjAXA9E9HsedJa3fmDPyoTU9IK8t7MiuuMnm9SNr64LeGfoAMxvP4gAus5idzACQbwY5jo4eOCZwEIpSORQFFL4FM-trySht8CGqb-QC5bzO6OVvn~bVw8G0UlTZXO8o2C8vfWCs6AbdNRFrjVvURJT8ln8O3Qx5SmZu1u3VGhGtllYfUEAMqm6GIH5AxXfJAyi0n4aIzaUrqHqQaqrS-AILOV9AYvZNs58rw-wNWhv1Fs3Gjr91Of4d5ybCwIGf4imEh5QRr7r43z5itKMxvGqHgprfUeEKas2P79ihRUQfPrF-w__"
+                  src="/image/hidroterapia.jpeg"
                   alt="Hidroterapia"
                   className="w-32 h-32 rounded-lg object-cover"
                 />
@@ -110,7 +109,7 @@ export default function Home() {
                   Terapia com água para reabilitação, relaxamento e tratamento de condições específicas como pés diabéticos.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Inclui tratamento com ozônio para máxima eficácia
+                  Profissionais especializados
                 </p>
               </div>
             </div>
@@ -118,14 +117,12 @@ export default function Home() {
             {/* Massoterapia */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <img
-                  src="https://private-us-east-1.manuscdn.com/sessionFile/r4eqXbJ306wy5f16Shcgho/sandbox/BrjvSUtPVruVaxTXmHKdTS-img-1_1771341308000_na1fn_bWFzc2FnZW0tdGVyYXBldXRpY2E.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcjRlcVhiSjMwNnd5NWYxNlNoY2doby9zYW5kYm94L0JyanZTVXRQVnJ1VmF4VFhtSEtkVFMtaW1nLTFfMTc3MTM0MTMwODAwMF9uYTFmbl9iV0Z6YzJGblpXMHRkR1Z5WVhCbGRYUnBZMkUucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=QrinEMzKmzqUbTrUhEuvCLfPpDwFNQQJki8Vdz3mxRyBQIpVd2WwuicVY~5~y5SuVwAc-NAZhUMe6qcwitYwj5IlY01RPY9gAwET~SsQA3eBby5knZExHKnaLxTK686bfOvMcqFhF1hIouO1xibm37zgcqCcortFWVqvXvxbhDjqfldEqk1gduLN3a62Ck2ff4ciE1skRRnloyizuiM02TQxo6eK6nE3xEvTP4qQHdkcinkLLdUTu-WJQbYvK77buSd3GMfsP3EglBklmcuLMrjRV3IBFj35YHbDQ2oroZ1Te~fcIluP9dBAMFAjXinuDb4229m1WibRdbE9QyewiQ__"
-                  alt="Massoterapia"
-                  className="w-32 h-32 rounded-lg object-cover"
-                />
+                <div className="w-32 h-32 rounded-lg bg-gray-200 flex items-center justify-center">
+                  <span className="text-gray-500 text-sm">Imagem em breve</span>
+                </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">Massoterapia</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-3">Massagem Relaxante</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Técnicas de massagem terapêutica para alívio de tensões, melhora da circulação e relaxamento profundo.
                 </p>
@@ -135,17 +132,17 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Ozonioterapia */}
+            {/* Ventosaterapia */}
             <div className="flex gap-8">
               <div className="flex-shrink-0">
-                <div className="w-32 h-32 rounded-lg bg-accent/10 flex items-center justify-center">
-                  <Wind className="w-16 h-16 text-accent" />
+                <div className="w-32 h-32 rounded-lg bg-gray-200 flex items-center justify-center">
+                  <span className="text-gray-500 text-sm">Imagem em breve</span>
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">Ozonioterapia</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-3">Ventosaterapia</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Tratamento inovador com ozônio para potencializar a eficácia de outras terapias e promover cura acelerada.
+                  Tratamento alternativo no qual são usadas ventosas que criam um vácuo na pele, para melhorar a circulação sanguínea em um local do corpo.
                 </p>
                 <p className="text-sm text-muted-foreground">
                   Especialmente eficaz em tratamentos de feridas e condições crônicas
@@ -233,8 +230,9 @@ export default function Home() {
               <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4">
                 <Phone className="w-6 h-6 text-accent" />
               </div>
-              <h3 className="font-bold text-foreground mb-4">Contato</h3>
-              <div className="flex items-center justify-center gap-2 mb-4">
+              <h3 className="font-bold text-foreground mb-2">Contato</h3>
+              <p className="text-sm text-muted-foreground mb-1">Entre em Contato</p>
+              <div className="flex items-center justify-center gap-2 mb-3">
                 <Phone className="w-4 h-4 text-accent" />
                 <p className="text-sm text-muted-foreground font-medium">(11) 3864-9570</p>
               </div>
@@ -262,7 +260,7 @@ export default function Home() {
       </section>
 
       {/* Map Section */}
-      <section className="py-16 bg-white">
+      <section className="py-24 bg-muted/30">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-4">Nos Encontre</h2>
@@ -270,14 +268,13 @@ export default function Home() {
           </div>
           <div className="rounded-lg overflow-hidden shadow-lg h-96">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.123456!2d-46.6789!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef9c9c9c9c9c9%3A0x9c9c9c9c9c9c9c9c!2sRua%20Turiassu%2C%20662%20-%20Perdizes%2C%20S%C3%A3o%20Paulo%2C%20SP%2005005-000!5e0!3m2!1spt-BR!2sbr!4v1234567890"
               width="100%"
               height="100%"
               style={{ border: 0 }}
-              allowFullScreen={true}
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+              allowFullScreen
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0928537701357!2d-46.6662!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c3e6a3a3a3a3a3%3A0x0!2sRua%20Turiassu%2C%20662%20-%20Perdizes%2C%20S%C3%A3o%20Paulo%2C%20SP%2005005-000!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+            ></iframe>
           </div>
         </div>
       </section>
