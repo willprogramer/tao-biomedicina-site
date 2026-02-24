@@ -259,6 +259,85 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Retirada e Entrega Section */}
+      <section className="py-24 bg-white">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-4">Retirada e Entrega a Domicílio</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">Oferecemos o serviço de retirada e entrega a domicílio para sua comodidade. Agende sua consulta e nós cuidamos do transporte.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center p-8 bg-muted/30 rounded-lg">
+              <div className="inline-block p-3 bg-accent/20 rounded-full mb-4">
+                <Droplets className="w-8 h-8 text-accent" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Retirada Segura</h3>
+              <p className="text-muted-foreground">Passamos em sua residência para buscá-lo com segurança e conforto.</p>
+            </div>
+            <div className="text-center p-8 bg-muted/30 rounded-lg">
+              <div className="inline-block p-3 bg-accent/20 rounded-full mb-4">
+                <Leaf className="w-8 h-8 text-accent" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Atendimento Personalizado</h3>
+              <p className="text-muted-foreground">Nossos profissionais garantem um atendimento atencioso e profissional.</p>
+            </div>
+            <div className="text-center p-8 bg-muted/30 rounded-lg">
+              <div className="inline-block p-3 bg-accent/20 rounded-full mb-4">
+                <Wind className="w-8 h-8 text-accent" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Retorno Confortável</h3>
+              <p className="text-muted-foreground">Após o atendimento, fazemos sua entrega em casa com total segurança.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-24 bg-muted/30">
+        <div className="container">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold text-accent mb-2">DEPOIMENTOS</p>
+            <h2 className="text-4xl font-bold text-foreground mb-4">O que nossos pacientes dizem</h2>
+            <p className="text-muted-foreground">Confira os depoimentos de pacientes satisfeitos com nossos serviços.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Testimonial 1 */}
+            <div className="bg-white p-8 rounded-lg border-l-4 border-accent shadow-sm">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-yellow-400">★</span>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 italic">"A acupuntura com a Tao mudou minha vida. Sou muito grato pelo profissionalismo e dedicação da equipe. Recomendo para todos!"</p>
+              <p className="font-semibold text-foreground">Roberto Silva</p>
+              <p className="text-sm text-muted-foreground">Empresário</p>
+            </div>
+            {/* Testimonial 2 */}
+            <div className="bg-white p-8 rounded-lg border-l-4 border-accent shadow-sm">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-yellow-400">★</span>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 italic">"As sessões de hidroterapia me ajudaram muito com minhas dores. A equipe é muito atenciosa e o ambiente é muito acolhedor."</p>
+              <p className="font-semibold text-foreground">Fernanda Costa</p>
+              <p className="text-sm text-muted-foreground">Professora</p>
+            </div>
+            {/* Testimonial 3 */}
+            <div className="bg-white p-8 rounded-lg border-l-4 border-accent shadow-sm">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-yellow-400">★</span>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 italic">"Excelente atendimento! A massoterapia me deixou muito relaxado. Voltarei com certeza. Muito obrigado à toda equipe!"</p>
+              <p className="font-semibold text-foreground">Marcos Oliveira</p>
+              <p className="text-sm text-muted-foreground">Consultor</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Map Section */}
       <section className="py-24 bg-muted/30">
         <div className="container">
