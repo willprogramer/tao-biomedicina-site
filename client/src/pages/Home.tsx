@@ -266,6 +266,13 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-foreground mb-4">Retirada e Entrega a Domicílio</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">Oferecemos o serviço de retirada e entrega a domicílio para sua comodidade. Agende sua consulta e nós cuidamos do transporte.</p>
           </div>
+          <div className="mb-12 flex justify-center">
+            <img
+              src="https://private-us-east-1.manuscdn.com/sessionFile/r4eqXbJ306wy5f16Shcgho/sandbox/T27LWDOLW2bL6NteIJ6WiG-img-1_1771945646000_na1fn_YW1idWxhbmNpYS10cmFuc3BvcnRl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcjRlcVhiSjMwNnd5NWYxNlNoY2doby9zYW5kYm94L1QyN0xXRE9MVzJiTDZOdGVJSjZXaUctaW1nLTFfMTc3MTk0NTY0NjAwMF9uYTFmbl9ZVzFpZFd4aGJtTnBZUzEwY21GdWMzQnZjblJsLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=EIw1qQGKHHWVRttlJCDk0In0EOPB0hido0wN1tuAGYYK0ajhf3hnmDCEUXZ8Uke3uiR4MDRtfE2Zq3YvGjt1qepDU1saUtZdA5RpHBmuYeFy8rajGaUhBx57xAQs4tcnnKnUrGisg4hi1mXPlSrjLfA~Tc4jAXabV6RlkO-bBnJBncufiu5vcFbREhqjvfGuHPhiQh6x4Uj9bunUSF89r2blp3-B~s9wsAsBdOahVK837gLwo3IkzIRvXkU0lULw~-JXt~H8RODzf1qXoJaSmOp7zscHEZzcprLQ3WZrNeaifyNumtuUNYIkwMRnsed20yB~G1Syn2RoKBNuBWCo3Q__"
+              alt="Ambulância de transporte"
+              className="w-full max-w-2xl h-auto rounded-lg shadow-lg"
+            />
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-8 bg-muted/30 rounded-lg">
               <div className="inline-block p-3 bg-accent/20 rounded-full mb-4">
