@@ -263,8 +263,8 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">Retirada e Entrega a Domicílio</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">Oferecemos o serviço de retirada e entrega a domicílio para sua comodidade. Agende sua consulta e nós cuidamos do transporte.</p>
+            <h2 className="text-4xl font-bold text-foreground mb-6">Serviço de Remoção em Ambulância</h2>
+            <p className="text-lg text-muted-foreground mb-8">Realizamos remoções hospitalares com segurança, agilidade e equipe qualificada.</p>
           </div>
           <div className="mb-12 flex justify-center">
             <img
@@ -273,27 +273,40 @@ export default function Home() {
               className="w-full max-w-2xl h-auto rounded-lg shadow-lg"
             />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-8 bg-muted/30 rounded-lg">
-              <div className="inline-block p-3 bg-accent/20 rounded-full mb-4">
-                <Droplets className="w-8 h-8 text-accent" />
+          <div className="bg-muted/20 rounded-lg p-10 border border-accent/20">
+            <h3 className="text-2xl font-bold text-foreground mb-6">Atendemos:</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+              <div className="flex items-center gap-3">
+                <span className="text-accent text-xl font-bold">✔</span>
+                <p className="text-foreground font-medium">Alta hospitalar</p>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Retirada Segura</h3>
-              <p className="text-muted-foreground">Passamos em sua residência para buscá-lo com segurança e conforto.</p>
+              <div className="flex items-center gap-3">
+                <span className="text-accent text-xl font-bold">✔</span>
+                <p className="text-foreground font-medium">Consultas e exames</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-accent text-xl font-bold">✔</span>
+                <p className="text-foreground font-medium">Remoção domiciliar</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-accent text-xl font-bold">✔</span>
+                <p className="text-foreground font-medium">Eventos</p>
+              </div>
             </div>
-            <div className="text-center p-8 bg-muted/30 rounded-lg">
-              <div className="inline-block p-3 bg-accent/20 rounded-full mb-4">
-                <Leaf className="w-8 h-8 text-accent" />
+            
+            <div className="border-t border-accent/20 pt-8">
+              <p className="text-muted-foreground mb-4">
+                <span className="font-semibold text-foreground">Ambulâncias equipadas</span> conforme normas da Agência Nacional de Vigilância Sanitária (ANVISA).
+              </p>
+              <p className="text-muted-foreground mb-6">
+                <span className="font-semibold text-foreground">Equipe treinada</span> e atendimento humanizado.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                <span className="text-foreground font-medium">Entre em contato para orçamento imediato:</span>
+                <a href="https://wa.me/5511999803503?text=Gostaria%20de%20solicitar%20o%20serviço%20de%20remoção%20em%20ambulância." target="_blank" rel="noopener noreferrer" className="text-accent font-bold hover:text-accent/80 transition-colors">
+                  +55 11 99980-3503
+                </a>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Atendimento Personalizado</h3>
-              <p className="text-muted-foreground">Nossos profissionais garantem um atendimento atencioso e profissional.</p>
-            </div>
-            <div className="text-center p-8 bg-muted/30 rounded-lg">
-              <div className="inline-block p-3 bg-accent/20 rounded-full mb-4">
-                <Wind className="w-8 h-8 text-accent" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Retorno Confortável</h3>
-              <p className="text-muted-foreground">Após o atendimento, fazemos sua entrega em casa com total segurança.</p>
             </div>
           </div>
         </div>
