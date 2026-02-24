@@ -275,7 +275,7 @@ export default function Home() {
           </div>
           <div className="bg-muted/20 rounded-lg p-10 border border-accent/20">
             <h3 className="text-2xl font-bold text-foreground mb-6">Atendemos:</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 md:justify-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               <div className="flex items-center gap-3">
                 <span className="text-accent text-xl font-bold">✔</span>
                 <p className="text-foreground font-medium">Alta hospitalar</p>
