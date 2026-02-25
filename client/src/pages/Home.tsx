@@ -94,9 +94,19 @@ export default function Home() {
               </div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-foreground mb-3">Acupuntura</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed mb-3">
                   Terapia tradicional chinesa que equilibra a energia do corpo, aliviando dores e promovendo bem-estar integral.
                 </p>
+                <div className="mt-4 pt-4 border-t border-accent/30">
+                  <p className="font-semibold text-foreground mb-3">Indicada para:</p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Dores cronicas</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Enxaquecas</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Stress</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Insonia</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Desequilibrios energeticos</span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -140,9 +150,19 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
               </div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-foreground mb-3">Massagem Relaxante</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Técnicas terapêuticas para alívio de tensões, melhora da circulação e relaxamento profundo. Profissionais especializados em diferentes modalidades.
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  Tecnicas terapeuticas para alivio de tensoes, melhora da circulacao e relaxamento profundo. Profissionais especializados em diferentes modalidades.
                 </p>
+                <div className="mt-4 pt-4 border-t border-accent/30">
+                  <p className="font-semibold text-foreground mb-3">Indicada para:</p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Tensao muscular</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Relaxamento</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Circulacao</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Bem-estar</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Recuperacao pos-atividade</span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -155,9 +175,19 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
               </div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-foreground mb-3">Ventosaterapia</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Técnica milenar da Medicina Tradicional Chinesa que utiliza copos de sucção para estimular circulação, aliviar dores e promover equilíbrio do organismo.
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  Tecnica milenar da Medicina Tradicional Chinesa que utiliza copos de succao para estimular circulacao, aliviar dores e promover equilibrio do organismo.
                 </p>
+                <div className="mt-4 pt-4 border-t border-accent/30">
+                  <p className="font-semibold text-foreground mb-3">Indicada para:</p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Dores musculares</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Circulacao</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Desintoxicacao</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Celulite</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Equilibrio energetico</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
