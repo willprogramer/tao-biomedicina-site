@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin, Clock, Droplets, Leaf, Wind, Send, AtSign } from "lucide-react";
 
@@ -8,6 +9,91 @@ import { Phone, MapPin, Clock, Droplets, Leaf, Wind, Send, AtSign } from "lucide
  * - Transições suaves e meditativas
  * - Tipografia: Playfair Display (títulos) + Inter (corpo)
  */
+
+const ambulanceImages = [
+  { id: 1, src: "/image/ambulancia1.jpeg", alt: "Ambulância 1" },
+  { id: 2, src: "/image/ambulancia2.jpeg", alt: "Ambulância 2" },
+  // { id: 3, src: "/image/ambulancia3.jpeg", alt: "Ambulância 3" },
+  // { id: 4, src: "/image/ambulancia4.jpeg", alt: "Ambulância 4" },
+];
+
+const PhotoSlider = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % ambulanceImages.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % ambulanceImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + ambulanceImages.length) % ambulanceImages.length);
+  };
+
+  return (
+    <div className="mb-12">
+      <div className="flex justify-center overflow-hidden rounded-lg">
+        <div className="w-full max-w-4xl">
+          <div className="relative w-full h-[520px] flex items-center justify-center group">
+            <button
+              onClick={prevSlide}
+              className="absolute left-1 top-1/2 -translate-y-1/2 z-20 cursor-pointer bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all w-10 h-10 flex items-center justify-center text-xl"
+              aria-label="Slide anterior"
+            >
+              ‹
+            </button>
+
+            <button
+              onClick={nextSlide}
+              className="absolute right-1 top-1/2 -translate-y-1/2 z-20 cursor-pointer bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all w-10 h-10 flex items-center justify-center text-xl"
+              aria-label="Próximo slide"
+            >
+              ›
+            </button>
+
+            {ambulanceImages.map((image, index) => (
+              <img
+                key={image.id}
+                src={image.src}
+                alt={image.alt}
+                className={`absolute w-full h-full object-contain transition-opacity duration-700 ease-in-out ${
+                  index === currentSlide ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            ))}
+
+            <div className="absolute bottom-1 left-1/2 translate-x-1/2 flex gap-3 z-20">
+              {ambulanceImages.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToSlide(index)}
+                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                    index === currentSlide ? "bg-blue-600 w-6" : "bg-white/70 hover:bg-white"
+                  }`}
+                  aria-label={`Ir para slide ${index + 1}`}
+                />
+              ))}
+            </div>
+
+            <div className="absolute top-4 right-1 bg-black/50 text-white px-3 py-1 rounded-full text-sm z-20">
+              {currentSlide + 1} / {ambulanceImages.length}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default function Home() {
   return (
@@ -144,9 +230,11 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
             {/* Massoterapia */}
             <div className="flex flex-col h-full">
               <div className="mb-6 flex-shrink-0">
-                <div className="w-full rounded-lg bg-gray-200 flex items-center justify-center h-48">
-                  <span className="text-gray-500 text-sm">Imagem em breve</span>
-                </div>
+                 <img
+                  src="/image/massoterapia.jpeg"
+                  alt="Massoterapia"
+                  className="w-full rounded-lg object-cover h-48"
+                />
               </div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-foreground mb-3">Massagem Relaxante</h3>
@@ -169,9 +257,11 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
             {/* Ventosaterapia */}
             <div className="flex flex-col h-full">
               <div className="mb-6 flex-shrink-0">
-                <div className="w-full rounded-lg bg-gray-200 flex items-center justify-center h-48">
-                  <span className="text-gray-500 text-sm">Imagem em breve</span>
-                </div>
+                 <img
+                  src="/image/ventosa.jpeg"
+                  alt="Ventosaterapia"
+                  className="w-full rounded-lg object-cover h-48"
+                />
               </div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-foreground mb-3">Ventosaterapia</h3>
@@ -307,13 +397,7 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
             <h2 className="text-4xl font-bold text-foreground mb-6">Serviço de Remoção em Ambulância</h2>
             <p className="text-lg text-muted-foreground mb-8">Realizamos remoções hospitalares com segurança, agilidade e equipe qualificada.</p>
           </div>
-          <div className="mb-12 flex justify-center">
-            <img
-              src="https://private-us-east-1.manuscdn.com/sessionFile/r4eqXbJ306wy5f16Shcgho/sandbox/T27LWDOLW2bL6NteIJ6WiG-img-1_1771945646000_na1fn_YW1idWxhbmNpYS10cmFuc3BvcnRl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcjRlcVhiSjMwNnd5NWYxNlNoY2doby9zYW5kYm94L1QyN0xXRE9MVzJiTDZOdGVJSjZXaUctaW1nLTFfMTc3MTk0NTY0NjAwMF9uYTFmbl9ZVzFpZFd4aGJtTnBZUzEwY21GdWMzQnZjblJsLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=EIw1qQGKHHWVRttlJCDk0In0EOPB0hido0wN1tuAGYYK0ajhf3hnmDCEUXZ8Uke3uiR4MDRtfE2Zq3YvGjt1qepDU1saUtZdA5RpHBmuYeFy8rajGaUhBx57xAQs4tcnnKnUrGisg4hi1mXPlSrjLfA~Tc4jAXabV6RlkO-bBnJBncufiu5vcFbREhqjvfGuHPhiQh6x4Uj9bunUSF89r2blp3-B~s9wsAsBdOahVK837gLwo3IkzIRvXkU0lULw~-JXt~H8RODzf1qXoJaSmOp7zscHEZzcprLQ3WZrNeaifyNumtuUNYIkwMRnsed20yB~G1Syn2RoKBNuBWCo3Q__"
-              alt="Ambulância de transporte"
-              className="w-full max-w-2xl h-auto rounded-lg shadow-lg"
-            />
-          </div>
+          <PhotoSlider />
           <div className="bg-muted/20 rounded-lg p-10 border border-accent/20">
             <h3 className="text-2xl font-bold text-foreground mb-6">Atendemos:</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -329,10 +413,10 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
                 <span className="text-accent text-xl font-bold">✔</span>
                 <p className="text-foreground font-medium">Remoção domiciliar</p>
               </div>
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <span className="text-accent text-xl font-bold">✔</span>
                 <p className="text-foreground font-medium">Eventos</p>
-              </div>
+              </div> */}
             </div>
             
             <div className="border-t border-accent/20 pt-8">
@@ -344,8 +428,8 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
               </p>
               <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
                 <span className="text-foreground font-medium">Entre em contato para orçamento imediato:</span>
-                <a href="https://wa.me/5511999803503?text=Gostaria%20de%20solicitar%20o%20serviço%20de%20remoção%20em%20ambulância." target="_blank" rel="noopener noreferrer" className="text-accent font-bold hover:text-accent/80 transition-colors">
-                  +55 11 99980-3503
+                <a href="https://wa.me/5511920721951?text=Gostaria%20de%20solicitar%20o%20serviço%20de%20remoção%20em%20ambulância." target="_blank" rel="noopener noreferrer" className="text-accent font-bold hover:text-accent/80 transition-colors">
+                  +55 11 92072-1951
                 </a>
               </div>
             </div>
