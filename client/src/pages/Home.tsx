@@ -116,9 +116,18 @@ export default function Home() {
 Através de exercícios específicos dentro da água, promovemos reabilitação, fortalecimento muscular e alívio da dor de forma segura e eficaz.
 A água aquecida proporciona relaxamento muscular, melhora da circulação e redução do impacto nas articulações, permitindo movimentos com mais conforto e menos dor.
                 </p>
-                <p className="text-muted-foreground leading-relaxed text-sm" style={{color: '#000000'}}>
-                  Indicada para: dores na coluna, artrose, artrite, lesões musculares, pós-operatório, reabilitação neurológica e fibromialgia.
-                </p>
+                <div className="mt-4 pt-4 border-t border-accent/30">
+                  <p className="font-semibold text-foreground mb-3">Indicada para:</p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Dores na coluna</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Artrose</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Artrite</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Lesões musculares</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Pós-operatório</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Reabilitação neurológica</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Fibromialgia</span>
+                  </div>
+                </div>
               </div>
             </div>
 
