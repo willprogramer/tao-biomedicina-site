@@ -101,22 +101,50 @@ export default function Home() {
             </div>
 
             {/* Hidroterapia */}
-            <div className="flex gap-8">
+            <div className="flex flex-col gap-6">
               <div className="flex-shrink-0">
                 <img
                   src="/image/hidroterapia.jpeg"
                   alt="Hidroterapia"
-                  className="w-32 h-32 rounded-lg object-cover"
+                  className="w-full rounded-lg object-cover h-48"
                 />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-3">Hidroterapia</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Terapia com água para reabilitação, relaxamento e tratamento de condições específicas como pés diabéticos.
+                  Terapia Individual realizada em piscina aquecida, com atendimento personalizado e acompanhamento profissional.
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  Profissionais especializados
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Através de exercícios específicos dentro da água, promovemos reabilitação, fortalecimento muscular e alívio da dor de forma segura e eficaz.
                 </p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  A água aquecida proporciona relaxamento muscular, melhora da circulação e redução do impacto nas articulações, permitindo movimentos com mais conforto e menos dor.
+                </p>
+                <h4 className="font-semibold text-foreground mb-3">Para quem é indicada?</h4>
+                <p className="text-muted-foreground mb-3">A hidroterapia é recomendada para:</p>
+                <ul className="space-y-2">
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <span className="text-accent">✔️</span> Dores na coluna
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <span className="text-accent">✔️</span> Artrose e artrite
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <span className="text-accent">✔️</span> Lesões musculares
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <span className="text-accent">✔️</span> Pós-operatório ortopédico
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <span className="text-accent">✔️</span> Reabilitação neurológica
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <span className="text-accent">✔️</span> Fibromialgia
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <span className="text-accent">✔️</span> Idosos com limitação de mobilidade
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -139,19 +167,19 @@ export default function Home() {
             </div>
 
             {/* Ventosaterapia */}
-            <div className="flex gap-8">
+            <div className="flex flex-col gap-6">
               <div className="flex-shrink-0">
-                <div className="w-32 h-32 rounded-lg bg-gray-200 flex items-center justify-center">
+                <div className="w-full rounded-lg bg-gray-200 flex items-center justify-center h-48">
                   <span className="text-gray-500 text-sm">Imagem em breve</span>
                 </div>
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-foreground mb-3">Ventosaterapia</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Tratamento alternativo no qual são usadas ventosas que criam um vácuo na pele, para melhorar a circulação sanguínea em um local do corpo.
+                  Técnica terapêutica milenar utilizada pela Medicina Tradicional Chinesa, que utiliza copos de sucção aplicados sobre a pele para estimular a circulação sanguínea, aliviar dores e promover o equilíbrio do organismo.
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  Especialmente eficaz em tratamentos de feridas e condições crônicas
+                <p className="text-muted-foreground leading-relaxed">
+                  A sucção cria uma pressão negativa que ativa a circulação local, auxilia na liberação de toxinas e reduz tensões musculares.
                 </p>
               </div>
             </div>
