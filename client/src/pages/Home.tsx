@@ -82,18 +82,18 @@ export default function Home() {
             <div className="w-16 h-1 bg-accent mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16">
+          <div className="space-y-16">
             {/* Acupuntura */}
-            <div className="flex gap-8">
+            <div className="flex flex-col gap-6">
               <div className="flex-shrink-0">
                 <img
                   src="/image/acupuntura.jpeg"
                   alt="Acupuntura"
-                  className="w-32 h-32 rounded-lg object-cover"
+                  className="w-full rounded-lg object-cover h-64"
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">Acupuntura</h3>
+                <h3 className="text-3xl font-bold text-foreground mb-3">Acupuntura</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Terapia tradicional chinesa que equilibra a energia do corpo, aliviando dores e promovendo bem-estar integral.
                 </p>
@@ -106,11 +106,11 @@ export default function Home() {
                 <img
                   src="/image/hidroterapia.jpeg"
                   alt="Hidroterapia"
-                  className="w-full rounded-lg object-cover h-48"
+                  className="w-full rounded-lg object-cover h-64"
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">Hidroterapia</h3>
+                <h3 className="text-3xl font-bold text-foreground mb-3">Hidroterapia</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Terapia Individual realizada em piscina aquecida, com atendimento personalizado e acompanhamento profissional.
                 </p>
@@ -149,18 +149,18 @@ export default function Home() {
             </div>
 
             {/* Massoterapia */}
-            <div className="flex gap-8">
+            <div className="flex flex-col gap-6">
               <div className="flex-shrink-0">
-                <div className="w-32 h-32 rounded-lg bg-gray-200 flex items-center justify-center">
+                <div className="w-full rounded-lg bg-gray-200 flex items-center justify-center h-64">
                   <span className="text-gray-500 text-sm">Imagem em breve</span>
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">Massagem Relaxante</h3>
+                <h3 className="text-3xl font-bold text-foreground mb-3">Massagem Relaxante</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Técnicas de massagem terapêutica para alívio de tensões, melhora da circulação e relaxamento profundo.
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-muted-foreground">
                   Profissionais especializados em diferentes modalidades
                 </p>
               </div>
@@ -169,12 +169,12 @@ export default function Home() {
             {/* Ventosaterapia */}
             <div className="flex flex-col gap-6">
               <div className="flex-shrink-0">
-                <div className="w-full rounded-lg bg-gray-200 flex items-center justify-center h-48">
+                <div className="w-full rounded-lg bg-gray-200 flex items-center justify-center h-64">
                   <span className="text-gray-500 text-sm">Imagem em breve</span>
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">Ventosaterapia</h3>
+                <h3 className="text-3xl font-bold text-foreground mb-3">Ventosaterapia</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Técnica terapêutica milenar utilizada pela Medicina Tradicional Chinesa, que utiliza copos de sucção aplicados sobre a pele para estimular a circulação sanguínea, aliviar dores e promover o equilíbrio do organismo.
                 </p>
