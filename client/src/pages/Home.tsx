@@ -309,7 +309,8 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
               <ImageCarousel
                 slides={[
                   { id: 1, src: "/image/ambulancia1.jpeg", alt: "Ambulância de transporte" },
-                  { id: 2, src: "/image/saudesf.jpeg", alt: "Saúde sem Fronteiras" }
+                  { id: 2, src: "/image/ambulancia2.jpeg", alt: "Interior da ambulância" },
+                  { id: 3, src: "/image/saudesf.jpeg", alt: "Saúde sem Fronteiras" }
                 ]}
               />
             </div>
