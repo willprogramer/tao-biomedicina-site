@@ -95,8 +95,11 @@ export default function Home() {
               </div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-foreground mb-3">Acupuntura</h3>
-                <p className="text-muted-foreground leading-relaxed mb-3">
-                  A Acupuntura Sistêmica trata o organismo de forma global, considerando corpo, mente e emoções como partes interligadas. Busca identificar e tratar a causa do desequilíbrio energético, não apenas os sintomas.
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  A Acupuntura Sistêmica é uma abordagem terapéutica baseada na Medicina Tradicional Chinesa que trata o organismo de forma global, considerando corpo, mente e emoções como partes interligadas.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Diferente de tratamentos que atuam apenas nos sintomas, a acupuntura sistêmica busca identificar e tratar a causa do desequilíbrio energético que está por trás das queixas apresentadas pelo paciente.
                 </p>
                 <div className="mt-4 pt-4 border-t border-accent/30">
                   <p className="font-semibold text-foreground mb-3">Benefícios:</p>
@@ -123,7 +126,10 @@ export default function Home() {
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-foreground mb-3">Hidroterapia</h3>
                 <p className="text-muted-foreground leading-relaxed mb-3">
-                  Terapia realizada em piscina aquecida com atendimento personalizado. Através de exercícios específicos, promovemos reabilitação, fortalecimento muscular e alívio da dor. A água aquecida proporciona relaxamento e redução do impacto nas articulações.
+                  Terapia realizada em piscina aquecida com atendimento personalizado. Através de exercícios específicos, promovemos reabilitação, fortalecimento muscular e alívio da dor.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  A água aquecida proporciona relaxamento e redução do impacto nas articulações.
                 </p>
                 <div className="mt-4 pt-4 border-t border-accent/30">
                   <p className="font-semibold text-foreground mb-3">Indicada para:</p>
