@@ -126,10 +126,10 @@ export default function Home() {
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-foreground mb-3">Hidroterapia</h3>
                 <p className="text-muted-foreground leading-relaxed mb-3">
-                  Terapia realizada em piscina aquecida com atendimento personalizado. Através de exercícios específicos, promovemos reabilitação, fortalecimento muscular e alívio da dor.
+                  Terapia Individual realizada em piscina aquecida, com atendimento personalizado e acompanhamento profissional. Através de exercícios específicos dentro da água, promovemos reabilitação, fortalecimento muscular e alívio da dor de forma segura e eficaz.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-3">
-                  A água aquecida proporciona relaxamento e redução do impacto nas articulações.
+                  A água aquecida proporciona relaxamento muscular, melhora da circulação e redução do impacto nas articulações, permitindo movimentos com mais conforto e menos dor.
                 </p>
                 <div className="mt-4 pt-4 border-t border-accent/30">
                   <p className="font-semibold text-foreground mb-3">Indicada para:</p>
