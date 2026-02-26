@@ -315,11 +315,18 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
               <div className="flex justify-center gap-2 mt-4">
                 <button className="w-2 h-2 rounded-full bg-accent"></button>
                 <button className="w-2 h-2 rounded-full bg-accent/30"></button>
-                <button className="w-2 h-2 rounded-full bg-accent/30"></button>
               </div>
             </div>
           </div>
-          <div className="bg-muted/20 rounded-lg p-10 border border-accent/20">
+          <div className="relative bg-muted/20 rounded-lg p-10 border border-accent/20 overflow-hidden">
+            <div className="absolute inset-0 opacity-5 flex items-center justify-center pointer-events-none">
+              <img
+                src="/image/saudesf.jpeg"
+                alt="Saúde sem Fronteiras"
+                className="w-96 h-96 object-contain"
+              />
+            </div>
+            <div className="relative z-10">
             <h3 className="text-2xl font-bold text-foreground mb-6">Atendemos:</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               <div className="flex items-center gap-3">
@@ -334,10 +341,7 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
                 <span className="text-accent text-xl font-bold">✔</span>
                 <p className="text-foreground font-medium">Remoção domiciliar</p>
               </div>
-              <div className="flex items-center gap-3">
-                <span className="text-accent text-xl font-bold">✔</span>
-                <p className="text-foreground font-medium">Eventos</p>
-              </div>
+
             </div>
             
             <div className="border-t border-accent/20 pt-8">
@@ -353,6 +357,7 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
                   +55 11 92072-1951
                 </a>
               </div>
+            </div>
             </div>
           </div>
         </div>
