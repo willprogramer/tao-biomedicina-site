@@ -95,17 +95,20 @@ export default function Home() {
               </div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-foreground mb-3">Acupuntura</h3>
-                <p className="text-muted-foreground leading-relaxed mb-3">
-                  Terapia tradicional chinesa que equilibra a energia do corpo, aliviando dores e promovendo bem-estar integral.
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  A Acupuntura Sistêmica é uma abordagem terapêutica baseada na Medicina Tradicional Chinesa que trata o organismo de forma global, considerando corpo, mente e emoções como partes interligadas.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Diferente de tratamentos que atuam apenas nos sintomas, a acupuntura sistêmica busca identificar e tratar a causa do desequilíbrio energético que está por trás das queixas apresentadas pelo paciente.
                 </p>
                 <div className="mt-4 pt-4 border-t border-accent/30">
-                  <p className="font-semibold text-foreground mb-3">Indicada para:</p>
+                  <p className="font-semibold text-foreground mb-3">Benefícios:</p>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Dores cronicas</span>
-                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Enxaquecas</span>
-                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Stress</span>
-                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Insonia</span>
-                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Desequilibrios energeticos</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Regula a circulação energética</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Estimula o sistema nervoso</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Libera substâncias analgésicas naturais</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Melhora a circulação sanguínea</span>
+                    <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-xs font-medium">Reequilibra funções orgânicas</span>
                   </div>
                 </div>
               </div>
