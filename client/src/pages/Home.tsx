@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin, Clock, Droplets, Leaf, Wind, Send, AtSign } from "lucide-react";
+import { ImageCarousel } from "@/components/ImageCarousel";
 
 /**
  * Design Philosophy: Minimalismo Zen com Toques Orgânicos
@@ -304,19 +305,12 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
             <p className="text-lg text-muted-foreground mb-8">Realizamos remoções hospitalares com segurança, agilidade e equipe qualificada.</p>
           </div>
           <div className="mb-12 flex justify-center">
-            <div className="w-full max-w-2xl">
-              <div className="relative bg-gray-100 rounded-lg overflow-hidden shadow-lg h-96">
-                <img
-                  src="/image/ambulancia1.jpeg"
-                  alt="Ambulância de transporte"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="flex justify-center gap-2 mt-4">
-                <button className="w-2 h-2 rounded-full bg-accent"></button>
-                <button className="w-2 h-2 rounded-full bg-accent/30"></button>
-              </div>
-            </div>
+            <ImageCarousel
+              slides={[
+                { id: 1, src: "/image/ambulancia1.jpeg", alt: "Ambulância de transporte" },
+                { id: 2, src: "/image/saudesf.jpeg", alt: "Saúde sem Fronteiras" }
+              ]}
+            />
           </div>
           <div className="relative bg-muted/20 rounded-lg p-10 border border-accent/20 overflow-hidden">
             <div className="absolute inset-0 opacity-5 flex items-center justify-center pointer-events-none">
