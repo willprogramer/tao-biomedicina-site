@@ -304,11 +304,20 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
             <p className="text-lg text-muted-foreground mb-8">Realizamos remoções hospitalares com segurança, agilidade e equipe qualificada.</p>
           </div>
           <div className="mb-12 flex justify-center">
-            <img
-              src="https://private-us-east-1.manuscdn.com/sessionFile/r4eqXbJ306wy5f16Shcgho/sandbox/T27LWDOLW2bL6NteIJ6WiG-img-1_1771945646000_na1fn_YW1idWxhbmNpYS10cmFuc3BvcnRl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcjRlcVhiSjMwNnd5NWYxNlNoY2doby9zYW5kYm94L1QyN0xXRE9MVzJiTDZOdGVJSjZXaUctaW1nLTFfMTc3MTk0NTY0NjAwMF9uYTFmbl9ZVzFpZFd4aGJtTnBZUzEwY21GdWMzQnZjblJsLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=EIw1qQGKHHWVRttlJCDk0In0EOPB0hido0wN1tuAGYYK0ajhf3hnmDCEUXZ8Uke3uiR4MDRtfE2Zq3YvGjt1qepDU1saUtZdA5RpHBmuYeFy8rajGaUhBx57xAQs4tcnnKnUrGisg4hi1mXPlSrjLfA~Tc4jAXabV6RlkO-bBnJBncufiu5vcFbREhqjvfGuHPhiQh6x4Uj9bunUSF89r2blp3-B~s9wsAsBdOahVK837gLwo3IkzIRvXkU0lULw~-JXt~H8RODzf1qXoJaSmOp7zscHEZzcprLQ3WZrNeaifyNumtuUNYIkwMRnsed20yB~G1Syn2RoKBNuBWCo3Q__"
-              alt="Ambulância de transporte"
-              className="w-full max-w-2xl h-auto rounded-lg shadow-lg"
-            />
+            <div className="w-full max-w-2xl">
+              <div className="relative bg-gray-100 rounded-lg overflow-hidden shadow-lg h-96">
+                <img
+                  src="/image/ambulancia1.jpeg"
+                  alt="Ambulância de transporte"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex justify-center gap-2 mt-4">
+                <button className="w-2 h-2 rounded-full bg-accent"></button>
+                <button className="w-2 h-2 rounded-full bg-accent/30"></button>
+                <button className="w-2 h-2 rounded-full bg-accent/30"></button>
+              </div>
+            </div>
           </div>
           <div className="bg-muted/20 rounded-lg p-10 border border-accent/20">
             <h3 className="text-2xl font-bold text-foreground mb-6">Atendemos:</h3>
