@@ -304,16 +304,18 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
             <h2 className="text-4xl font-bold text-foreground mb-6">Serviço de Remoção em Ambulância</h2>
             <p className="text-lg text-muted-foreground mb-8">Realizamos remoções hospitalares com segurança, agilidade e equipe qualificada.</p>
           </div>
-          <div className="mb-12 flex justify-center">
-            <ImageCarousel
-              slides={[
-                { id: 1, src: "/image/ambulancia1.jpeg", alt: "Ambulância de transporte" },
-                { id: 2, src: "/image/saudesf.jpeg", alt: "Saúde sem Fronteiras" }
-              ]}
-            />
+          <div className="mb-16 flex justify-center -mx-4 sm:-mx-6 md:-mx-8">
+            <div className="w-full px-4 sm:px-6 md:px-8">
+              <ImageCarousel
+                slides={[
+                  { id: 1, src: "/image/ambulancia1.jpeg", alt: "Ambulância de transporte" },
+                  { id: 2, src: "/image/saudesf.jpeg", alt: "Saúde sem Fronteiras" }
+                ]}
+              />
+            </div>
           </div>
-          <div className="relative bg-muted/20 rounded-lg p-10 border border-accent/20 overflow-hidden">
-            <div className="absolute inset-0 opacity-5 flex items-center justify-center pointer-events-none">
+          <div className="relative bg-muted/20 rounded-lg p-10 overflow-hidden">
+            <div className="absolute inset-0 opacity-3 flex items-center justify-center pointer-events-none">
               <img
                 src="/image/saudesf.jpeg"
                 alt="Saúde sem Fronteiras"

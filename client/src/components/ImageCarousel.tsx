@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface Slide {
@@ -9,26 +9,54 @@ interface Slide {
 
 interface ImageCarouselProps {
   slides: Slide[];
+  autoPlayInterval?: number;
 }
 
-export function ImageCarousel({ slides }: ImageCarouselProps) {
+export function ImageCarousel({ slides, autoPlayInterval = 5000 }: ImageCarouselProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  // Auto-play effect
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, autoPlayInterval);
+
+    return () => clearInterval(interval);
+  }, [isAutoPlaying, slides.length, autoPlayInterval]);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
+    setIsAutoPlaying(false);
   };
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    setIsAutoPlaying(false);
   };
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
+    setIsAutoPlaying(false);
+  };
+
+  const handleMouseEnter = () => {
+    setIsAutoPlaying(false);
+  };
+
+  const handleMouseLeave = () => {
+    setIsAutoPlaying(true);
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto">
-      <div className="relative bg-gray-50 rounded-lg overflow-hidden shadow-lg h-96 group">
+    <div className="w-full">
+      <div 
+        className="relative bg-gray-50 overflow-hidden shadow-lg h-[500px] group"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
         {/* Slide Container */}
         <div className="relative w-full h-full">
           {slides.map((slide, index) => (
@@ -41,7 +69,7 @@ export function ImageCarousel({ slides }: ImageCarouselProps) {
               <img
                 src={slide.src}
                 alt={slide.alt}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain bg-gray-50"
               />
             </div>
           ))}
@@ -65,6 +93,14 @@ export function ImageCarousel({ slides }: ImageCarouselProps) {
               <ChevronRight className="w-6 h-6" />
             </button>
           </>
+        )}
+
+        {/* Auto-play indicator */}
+        {isAutoPlaying && slides.length > 1 && (
+          <div className="absolute bottom-4 left-4 z-10 flex items-center gap-2 bg-black/30 px-3 py-1 rounded-full text-white text-xs">
+            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+            <span>Auto-play</span>
+          </div>
         )}
       </div>
 
