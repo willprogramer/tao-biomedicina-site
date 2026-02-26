@@ -169,9 +169,7 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
             {/* Ventosaterapia */}
             <div className="flex flex-col h-full">
               <div className="mb-6 flex-shrink-0">
-                <div className="w-full rounded-lg bg-gray-200 flex items-center justify-center h-48">
-                  <span className="text-gray-500 text-sm">Imagem em breve</span>
-                </div>
+                <img src="/image/ventosa.jpeg" alt="Ventosaterapia" className="w-full rounded-lg h-48 object-cover" />
               </div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-foreground mb-3">Ventosaterapia</h3>
@@ -344,8 +342,8 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
               </p>
               <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
                 <span className="text-foreground font-medium">Entre em contato para orçamento imediato:</span>
-                <a href="https://wa.me/5511999803503?text=Gostaria%20de%20solicitar%20o%20serviço%20de%20remoção%20em%20ambulância." target="_blank" rel="noopener noreferrer" className="text-accent font-bold hover:text-accent/80 transition-colors">
-                  +55 11 99980-3503
+                <a href="https://wa.me/5511920721951?text=Gostaria%20de%20solicitar%20o%20serviço%20de%20remoção%20em%20ambulância." target="_blank" rel="noopener noreferrer" className="text-accent font-bold hover:text-accent/80 transition-colors">
+                  +55 11 92072-1951
                 </a>
               </div>
             </div>
