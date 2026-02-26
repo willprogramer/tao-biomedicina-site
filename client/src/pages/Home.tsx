@@ -144,9 +144,7 @@ A água aquecida proporciona relaxamento muscular, melhora da circulação e red
             {/* Massoterapia */}
             <div className="flex flex-col h-full">
               <div className="mb-6 flex-shrink-0">
-                <div className="w-full rounded-lg bg-gray-200 flex items-center justify-center h-48">
-                  <span className="text-gray-500 text-sm">Imagem em breve</span>
-                </div>
+                <img src="/image/massoterapia.jpeg" alt="Massagem Relaxante" className="w-full rounded-lg h-48 object-cover" />
               </div>
               <div className="flex-grow">
                 <h3 className="text-2xl font-bold text-foreground mb-3">Massagem Relaxante</h3>
