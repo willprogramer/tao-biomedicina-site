@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite --host",
-    "build": "GITHUB_PAGES=true vite build",
-    "build:local": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
@@ -97,8 +96,5 @@
     "overrides": {
       "tailwindcss>nanoid": "3.3.7"
     }
-  },
-  "engines": {
-    "node": ">=18.0.0"
   }
 }
