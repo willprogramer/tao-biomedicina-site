@@ -1,0 +1,34 @@
+# Robots.txt - Tao Centro de Biomedicina
+# Otimizado para SEO em Perdizes
+
+# Permitir todos os bots
+User-agent: *
+Allow: /
+
+# Desabilitar crawl de arquivos desnecessários
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+Disallow: /temp/
+Disallow: /cache/
+
+# Permitir Google Bot
+User-agent: Googlebot
+Allow: /
+
+# Permitir Bing Bot
+User-agent: Bingbot
+Allow: /
+
+# Permitir Google Image Bot
+User-agent: Googlebot-Image
+Allow: /image/
+
+# Sitemap
+Sitemap: https://taobiomedic-8yuzhxbt.manus.space/sitemap.xml
+
+# Crawl delay (em segundos)
+Crawl-delay: 1
+
+# Request rate (requisições por segundo)
+Request-rate: 10/1s

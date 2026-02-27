@@ -1,0 +1,123 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://taobiomedic-8yuzhxbt.manus.space/#organization",
+      "name": "Tao Centro de Biomedicina Integrativa & Bem Estar",
+      "image": "https://taobiomedic-8yuzhxbt.manus.space/image/logo.jpeg",
+      "description": "Clínica especializada em acupuntura, hidroterapia, massagem e remoção de ambulância em Perdizes, São Paulo",
+      "url": "https://taobiomedic-8yuzhxbt.manus.space",
+      "telephone": "+5511999803503",
+      "email": "contato@taobiomedic.com.br",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Perdizes",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Perdizes, São Paulo"
+      },
+      "priceRange": "$$",
+      "sameAs": [
+        "https://www.instagram.com/taobiomedic",
+        "https://www.facebook.com/taobiomedic"
+      ]
+    },
+    {
+      "@type": "MedicalBusiness",
+      "@id": "https://taobiomedic-8yuzhxbt.manus.space/#medical",
+      "name": "Tao Centro de Biomedicina",
+      "medicalSpecialty": [
+        "Acupuntura",
+        "Fisioterapia",
+        "Terapia Integrativa",
+        "Medicina Tradicional Chinesa"
+      ],
+      "knowsAbout": [
+        "Acupuntura Sistêmica",
+        "Hidroterapia",
+        "Massagem Terapêutica",
+        "Ventosaterapia",
+        "Remoção de Ambulância"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://taobiomedic-8yuzhxbt.manus.space/acupuntura-perdizes",
+      "name": "Acupuntura em Perdizes",
+      "description": "Tratamento de acupuntura sistêmica baseado na Medicina Tradicional Chinesa para dor, estresse e bem-estar completo",
+      "provider": {
+        "@type": "LocalBusiness",
+        "@id": "https://taobiomedic-8yuzhxbt.manus.space/#organization"
+      },
+      "areaServed": "Perdizes, São Paulo",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://taobiomedic-8yuzhxbt.manus.space/acupuntura-perdizes"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://taobiomedic-8yuzhxbt.manus.space/hidroterapia-perdizes",
+      "name": "Hidroterapia em Perdizes",
+      "description": "Terapia individual em piscina aquecida para reabilitação, fortalecimento muscular e alívio da dor",
+      "provider": {
+        "@type": "LocalBusiness",
+        "@id": "https://taobiomedic-8yuzhxbt.manus.space/#organization"
+      },
+      "areaServed": "Perdizes, São Paulo",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://taobiomedic-8yuzhxbt.manus.space/hidroterapia-perdizes"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://taobiomedic-8yuzhxbt.manus.space/remocao-ambulancia-perdizes",
+      "name": "Remoção de Ambulância Particular em Perdizes",
+      "description": "Serviço de remoção de pacientes com ambulância particular 24 horas em Perdizes",
+      "provider": {
+        "@type": "LocalBusiness",
+        "@id": "https://taobiomedic-8yuzhxbt.manus.space/#organization"
+      },
+      "areaServed": "Perdizes, São Paulo",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://taobiomedic-8yuzhxbt.manus.space/remocao-ambulancia-perdizes"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é acupuntura sistêmica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Acupuntura Sistêmica é uma abordagem terapêutica baseada na Medicina Tradicional Chinesa que trata o organismo de forma global, considerando corpo, mente e emoções como partes interligadas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual é o benefício da hidroterapia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A hidroterapia em piscina aquecida proporciona relaxamento muscular, melhora da circulação e redução do impacto nas articulações, permitindo movimentos com mais conforto e menos dor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês oferecem remoção de ambulância?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, oferecemos serviço de remoção de ambulância particular 24 horas em Perdizes com profissionais qualificados."
+          }
+        }
+      ]
+    }
+  ]
+}
